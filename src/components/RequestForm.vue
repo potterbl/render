@@ -2,7 +2,7 @@
   <div className="request__form">
     <h1>Enter ZIP-Code</h1>
     <input-zip v-model="zip"/>
-    <button-render style="margin-top: 20px;" @click="sendRequest"/>
+    <button-render style="margin-top: 20px;" @click="sendRequest">Render</button-render>
   </div>
 </template>
 

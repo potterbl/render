@@ -1,7 +1,7 @@
 <template>
-  <button class="back__button" @click="firstStage">
+  <button-render style="position: absolute; top: 10px; left: 10px; padding: 10px 20px;" @click="firstStage">
     Go to first stage
-  </button>
+  </button-render>
   <div class="result__form">
     <p>Entered ZIP-Code: {{dataValue['post code']}}</p>
     <p>State: {{dataValue.places[0].state}}</p>

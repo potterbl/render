@@ -1,5 +1,5 @@
 <template>
-    <button>Render</button>
+    <button class="btn btn-light"><slot></slot></button>
 </template>
 
 <script>
