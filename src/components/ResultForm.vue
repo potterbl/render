@@ -8,8 +8,10 @@
     <p>City: {{dataValue.places[0]['place name']}}</p>
     <p>IP: {{this.ipAddress}}</p>
     <p>User Agent: {{this.userAgent}}</p>
-    <p>HTTP Referer: {{this.httpReferer}}</p>
-    <p>UTM: {{ decodeURIComponent(this.utmParams).replace(/&/g, ', ') }} </p>
+    <div v-if="this.httpReferer">
+      <p>HTTP Referer: {{this.httpReferer}}</p>
+      <p>UTM: {{ decodeURIComponent(this.utmParams).replace(/&/g, ', ') }} </p>
+    </div>
   </div>
 </template>
 
